@@ -11,7 +11,7 @@ contract NFTContract is ERC1155, Ownable {
     uint256 public constant ARTWORK = 0;  //two NFTS
     uint256 public constant PHOTO = 1;
 
-    constructor() ERC1155("") {
+    constructor() ERC1155("https://ggs86n5iavcj.usemoralis.com") {
         _mint(msg.sender, ARTWORK, 1, "");
         _mint(msg.sender, PHOTO, 2, "");
     }
